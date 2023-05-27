@@ -20,7 +20,7 @@
             <script>
                 function get_record() {
                     $.ajax({
-                        url: "http://localhost/api-final/students/",
+                        url: "http://localhost/api-finalss/students/",
                         method: "GET",
                         success: function(response) {
                             console.log(response)
@@ -36,7 +36,7 @@
             var course = prompt("Enter the course:");
 
             $.ajax({
-                url: "http://localhost/api-final/students/",
+                url: "http://localhost/api-finalss/students/",
                 method: "POST",
                 data: {
                     "name": name,
@@ -81,7 +81,7 @@
             var id = prompt("Enter the ID of the record to delete:");
 
             $.ajax({
-                url: "http://localhost/api-final/students/index.php?id=" + id,
+                url: "http://localhost/api-finalss/students/index.php?id=" + id,
                 method: "DELETE",
                 success: function(response) {
                     console.log(response);
